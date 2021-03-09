@@ -1,14 +1,9 @@
-
-.background-registro{
-    background-image: url('../assets/images/background-registro.jpg');
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-	background-size: cover;
+/* fuente */
+@font-face{
+    font-family:"Roboto";
+    src: url("../assets/fonts/roboto-v20-latin-regular.ttf") format("truetype");
 }
 
-.bg-registro{
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: -1px -2px 11px 3px;;
-    border-radius: 20px;
-}
+  
+
+

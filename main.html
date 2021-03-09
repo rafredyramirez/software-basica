@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./src/styles/bootstrap.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/icons.css">
+
+</head>
+<body class="background-main">
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalBienvenida" tabindex="-1" role="dialog" aria-labelledby="modalBienvenidaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalBienvenidaLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- <div class="container-lg"> -->
+        <nav class="nav" style="background-color: white;">
+            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </nav>
+    <!-- </div> -->
+    <!-- <div class="container"> -->
+
+
+    <!-- </div> -->
+    <div class="d-flex align-content-end flex-wrap">
+        <div class="order-2 p-2">Second flex item</div>
+        <div class="order-1 p-2">Third flex item</div>
+      </div>
+
+
+
+    <script src="./src/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="./src/js/popper.min.js"></script>
+    <script src="./src/js/bootstrap.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $("#modalBienvenida").modal("show");
+        });
+    </script>
+</body>
+</html>

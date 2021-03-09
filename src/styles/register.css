@@ -1,0 +1,62 @@
+.background-registro{
+    background-image: url('../assets/images/background-registro.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+	background-size: cover;
+}
+
+.bg-registro{
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: -1px -2px 11px 3px;
+    border-radius: 20px;
+}
+
+/* formulario  */
+.label-registro{
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.input-registro{    
+    border: 2px solid rgba(23, 162, 184, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    line-height: 35px;
+    text-align: center; 
+}
+
+.input-registro:focus{
+    border: 2px solid rgba(23, 162, 184, 0.9);
+    outline: none;
+}
+
+.input-icons i { 
+    position: absolute; 
+    padding: 13px 10px;
+} 
+
+/* radio */
+  .input-hidden {
+    position: absolute;
+    left: -9999px;
+}
+  
+input[type=radio]:checked + label>img {
+    box-shadow: 0 0 3px 3px #17a2b8;
+}
+  
+input[type=radio] + label>img {
+    border: 1px dashed red;
+    width: 150px;
+    height: 150px;
+    transition: 500ms all;
+    cursor: pointer;
+}
+  
+input[type=radio]:checked + label>img {
+    transform: 
+      rotateZ(-10deg) 
+      rotateX(10deg);
+}
+  
