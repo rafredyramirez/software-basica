@@ -17,7 +17,7 @@
 
         <div class="row justify-content-center bg-registro">
             <div class="text-center">
-                <form action="main.html" method="GET">
+                <form name="form" action="#" method="POST">
                     <div class="pt-4">
                         
                         <h2 class="label-registro">Nombre de usuario:</h2>
@@ -25,7 +25,7 @@
                     <div class="p-4">   
                         <div class="input-icons">
                             <i class="icon-users"></i>
-                            <input type="text" name="Nombre_Usuario" id="Nombre_Usuario" placeholder="Nombre de Estudiante" class="input-registro" >
+                            <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="Nombre de Estudiante" class="input-registro" >
                         </div>
                     </div>
                         
@@ -37,17 +37,15 @@
                         <div class="p-3">
                             <span>
                                 <div class="hover-img">
-                                    <input type="radio" name="radio_genero" id="radio_boy" class="input-hidden">
+                                    <input type="radio" name="radio_genero" id="radio_boy" value="Niño" class="input-hidden">
                                     <label for="radio_boy">
                                         <img src="./src/assets/images/boy.png" width="160" height="160" alt="Imagen genero niño" class="border border-info rounded-circle r-boy">
                                     </label>
-
-
                                 </div>
                             </span>
                         </div>
                         <div class="p-3">
-                            <input type="radio" name="radio_genero" id="radio_girl" class="input-hidden">
+                            <input type="radio" name="radio_genero" id="radio_girl" value="Niña" class="input-hidden">
                             <label for="radio_girl">
                                 <img src="./src/assets/images/girl.png" width="160" height="160" alt="Imagen genero niña" class="border border-info rounded-circle">
                             </label>
@@ -55,12 +53,13 @@
                     </div>
 
                     <div class="p-4">
-                        <button type="input" class="btn btn-info btn-lg btn-block">Ingresar</button>
+                        <button type="button" onclick="actionOnClick()" class="btn btn-info btn-lg btn-block">Ingresar</button>
                     </div>
 
                 </form>
             </div>
         </div>
+    <script src="./src/js/main.js"></script>
     <script src="./src/js/jquery-3.4.1.slim.min.js"></script>
     <script src="./src/js/popper.min.js"></script>
     <script src="./src/js/bootstrap.js"></script>

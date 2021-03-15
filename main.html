@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,56 +13,136 @@
     <link rel="stylesheet" href="./src/styles/icons.css">
 
 </head>
-<body class="background-main">
+<!-- <script>
+     window.onload = registroPop;
+</script> -->
+
+<body class="background-main" onload="registroPop()">
 
     <!-- Modal -->
-    <div class="modal fade" id="modalBienvenida" tabindex="-1" role="dialog" aria-labelledby="modalBienvenidaLabel" aria-hidden="true">
+    <div class="modal fade" id="modalBienvenida" tabindex="-1" role="dialog" aria-labelledby="modalBienvenidaLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalBienvenidaLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBienvenidaLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalDescripcion">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Continua navegando</button>
+                </div>
             </div>
         </div>
     </div>
     <!-- Modal -->
-    <!-- <div class="container-lg"> -->
-        <nav class="nav" style="background-color: white;">
-            <a class="nav-link active" href="#">Active</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </nav>
-    <!-- </div> -->
-    <!-- <div class="container"> -->
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navTheme">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Yo cuido mi cuerpo
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
 
-    <!-- </div> -->
-    <div class="d-flex align-content-end flex-wrap">
-        <div class="order-2 p-2">Second flex item</div>
-        <div class="order-1 p-2">Third flex item</div>
-      </div>
+                <ul class="navbar-nav ml-auto">
+                    <div id="contenedorImagen">
 
+                    </div>
 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="name_user" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="name_user">
+                            <a class="dropdown-item icon-exit" href="#"> Salir</a>
 
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="container pt-5">
+            <div class="row mt-1 pt-5">
+                <div class="col-12 col-md-6 border">
+                    <div class="row bg-light justify-content-center">
+                        <img src="./src/assets/images/abuso_sexual.png" alt="abuso sexual" height="300">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 border bg-light">
+                    <div class="alert alert-primary" role="alert">
+                        <div class="row justify-content-center">
+                            <strong>Abuso Sexual</strong>
+                        </div>
+                    </div>
+                    <div class="card border-info mb-3">
+                        <div class="card-body text-info">
+                            <p class="card-text">El <strong>Abuso Sexual</strong> es toda conducta en la que una niña o niño es utilizado como objeto sexual, existiendo o no un vínculo familiar o personal.<br>
+                                Aprende a como <strong>identificar</strong> y <strong>tratar</strong> este tipo de casos que pueden ser más comunes de lo que piensas.
+                                </p>
+                            <div class="d-flex justify-content-center alig">
+                                <a href="" class="btn btn-primary rounded-pill">Aprende más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-1 pt-4 mb-4">
+                <div class="col-12 col-md-6 border bg-light">
+                    <div class="alert alert-success" role="alert">
+                        <div class="row justify-content-center">
+                            <strong>Salud Mental</strong>
+                        </div>
+                    </div>
+                    <div class="card border-success mb-3">
+                        <div class="card-body text-success">
+                            <p class="card-text">La <strong>Salud Mental</strong> incluye nuestro bienestar emocional,
+                                psicológico y social. Afecta la forma en que pensamos sentimos y actuamos cuando
+                                enfrentamos la vida.<br>Aprende a <strong>manejar</strong> y <strong>fortalecer</strong> tu
+                                bienestar mental, para llevar una mejor forma de vida.</p>
+                            <div class="d-flex justify-content-center alig">
+                                <a href="" class="btn btn-success rounded-pill">Aprende más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 border">
+                    <div class="row bg-light justify-content-center">
+                        <img src="./src/assets/images/salud_mental.png" alt="salud mental" height="300">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- <footer>
+        <p>a</p>
+    </footer> -->
+
+    <script src="./src/js/main.js"></script>
     <script src="./src/js/jquery-3.4.1.slim.min.js"></script>
     <script src="./src/js/popper.min.js"></script>
     <script src="./src/js/bootstrap.js"></script>
-    
+
     <script>
         $(document).ready(function () {
             $("#modalBienvenida").modal("show");
         });
     </script>
 </body>
+
 </html>

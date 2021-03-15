@@ -1,35 +1,23 @@
 .background-main{
     background-image: url('../assets/images/backgorund-main.png');
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     background-position: center;
 	background-size: cover;
 }
 
-/* .opciones{
-    display: flex;
-  flex-direction: column;
+.scroll
+{
+    overflow-y:hidden;
+    overflow-x:scroll;
+}
 
+.navTheme{
+    box-shadow: 1px 6px 20px 0px;
+}
 
-} */
-
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border: 1px solid red;
-  }
-
-/* .border1{
-    justify-content: space-between;
-    align-items: baseline;
-    background-color: red;
-} */
-/* .ppq{
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-
-} */
+footer{
+    background: red;
+    width: 100%;
+    height: 40px;
+}
