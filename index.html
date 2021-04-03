@@ -1,67 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Registro</title>
-
-    <link rel="stylesheet" href="./src/styles/bootstrap.css">
-    <link rel="stylesheet" href="./src/styles/style.css">
-    <link rel="stylesheet" href="./src/styles/register.css">
-    <link rel="stylesheet" href="./src/styles/icons.css">
+    <title>Document</title>
+    <script src="./src/js/lib/phaser.min_216.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
-<body class="background-registro row align-items-center justify-content-center"> 
-
-        <div class="row justify-content-center bg-registro">
-            <div class="text-center">
-                <form name="form" action="#" method="POST">
-                    <div class="pt-4">
-                        
-                        <h2 class="label-registro">Nombre de usuario:</h2>
-                    </div>
-                    <div class="p-4">   
-                        <div class="input-icons">
-                            <i class="icon-users"></i>
-                            <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="Nombre de Estudiante" class="input-registro" >
-                        </div>
-                    </div>
-                        
-                    <div class="pt-2">
-                        <h2 class="label-registro">Genero:</h2>
-                    </div>
-
-                    <div class="d-inline-flex">
-                        <div class="p-3">
-                            <span>
-                                <div class="hover-img">
-                                    <input type="radio" name="radio_genero" id="radio_boy" value="Niño" class="input-hidden">
-                                    <label for="radio_boy">
-                                        <img src="./src/assets/images/boy.png" width="160" height="160" alt="Imagen genero niño" class="border border-info rounded-circle r-boy">
-                                    </label>
-                                </div>
-                            </span>
-                        </div>
-                        <div class="p-3">
-                            <input type="radio" name="radio_genero" id="radio_girl" value="Niña" class="input-hidden">
-                            <label for="radio_girl">
-                                <img src="./src/assets/images/girl.png" width="160" height="160" alt="Imagen genero niña" class="border border-info rounded-circle">
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="p-4">
-                        <button type="button" onclick="actionOnClick()" class="btn btn-info btn-lg btn-block">Ingresar</button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    <script src="./src/js/main.js"></script>
-    <script src="./src/js/jquery-3.4.1.slim.min.js"></script>
-    <script src="./src/js/popper.min.js"></script>
-    <script src="./src/js/bootstrap.js"></script>
+<body>
+    <div id="phaser-example">
+        
+    </div>
+    <script src="./src/js/phaser.js"></script>
 </body>
 </html>

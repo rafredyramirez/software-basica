@@ -1,3 +1,0 @@
-function llena(array){
-
-}
