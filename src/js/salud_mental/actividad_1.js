@@ -24,15 +24,16 @@ var cursors;
 function preload() {
 
     //Background
-    game.load.spritesheet('background', 'src/assets/images/fondos/city1.jpg', 1365, 625);
+    game.load.spritesheet('background', '../src/assets/images/fondos/city1.jpg', 1365, 625);
+
     game.scale.pageAlignHorizontally = true;
     game.scale.pageAlignVertically = true;
 
     //niño
-    game.load.spritesheet('boy', 'src/assets/images/personajes/sprite_boy.png',130,130);
-
+    game.load.spritesheet('boy', '../src/assets/images/personajes/sprite_boy.png',130,130);
+    
     // // niña
-    game.load.spritesheet('girld', 'src/assets/images/personajes/sprite_girld.png',130,130);
+    game.load.spritesheet('girld', '../src/assets/images/personajes/sprite_girld.png',130,130);
 }
 
 function create() {  
