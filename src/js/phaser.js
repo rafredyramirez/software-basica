@@ -70,7 +70,7 @@ function create() {
     girld.animations.play('left-running-girld');
 
     // logo
-    logo = game.add.sprite(500, 90, 'logo');
+    logo = game.add.sprite(400, 90, 'logo');
 
     game.physics.enable(logo, Phaser.Physics.ARCADE);
 
@@ -98,9 +98,8 @@ function update() {
         logo.body.gravity.y = 100;
     }else{
         logo.destroy();
-        logo = game.add.sprite(500, 88, 'logo');
+        logo = game.add.sprite(400, 88, 'logo');
   
-        
         btn_start = game.add.button(572, 330, 'btn_start', actionOnClick, this, 1, 0);
         btn_start.scale.setTo(1.5, 1.5); // scale image
     }
@@ -112,17 +111,6 @@ function render(){
     // game.debug.body(girld);
     // game.debug.body(boy);
     // game.debug.body(logo);
-}
-
-function miCollision (obj1, obj2) {
-    // boy.animations.play('front-splash');
-    // girld.animations.play('frente');
-}
-
-function miCollisionNo (obj1, obj2) {  
-    // boy.animations.play('right-running');
-    // girld_q.animations.play('quieta');
-
 }
 
 function actionOnClick() {

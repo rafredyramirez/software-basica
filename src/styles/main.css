@@ -6,6 +6,11 @@
 	background-size: cover;
 }
 
+#contenedorImagen img{
+    border: 2px solid #1e7690;
+    border-radius: 50%;
+}
+
 .scroll
 {
     overflow-y:hidden;
