@@ -38,7 +38,7 @@ function registroPop () {
         descripcion: function(){
             (objEstudiante.genero === 'Niño') ? letraGenero='o' : letraGenero='a'
             
-            return `Biendid${letraGenero} a <strong>Yo Cuido Mi Cuerpo</strong> en donde podrás aprender por medio de un material educativo temas sobre: <strong>Abuso Sexual</strong> y <strong>Salud Mental.</strong>`;
+            return `Biendid${letraGenero} a <strong>Friends</strong> en donde podrás aprender por medio de un material educativo temas sobre: <strong>Abuso Sexual</strong> y <strong>Salud Mental.</strong>`;
         },
     };
     nameUser.innerHTML = objEstudiante.nombre;

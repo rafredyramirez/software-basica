@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="stylesheet" href="./src/styles/icons.css">
-
+    <style>
+        
+        .bg-degradado {
+            background: linear-gradient(90deg, rgba(88,204,238,1) 50%, rgba(186,234,249,1) 100%);
+        }
+    </style>
 </head>
-<!-- <script>
-     window.onload = registroPop;
-</script> -->
-
 <body class="background-main" onload="registroPop()">
 
     <!-- Modal -->
@@ -40,10 +41,10 @@
     </div>
     <!-- Modal -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navTheme">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-degradado fixed-top navTheme">
         <div class="container">
             <a class="navbar-brand" href="#">
-                Yo cuido mi cuerpo
+                <img src="./src/assets/images/botones/logo_fin.png" alt="Logo friends" width="150">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,9 +57,9 @@
 
                     </div>
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" >
                         <a class="nav-link dropdown-toggle" href="#" id="name_user" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                            aria-haspopup="true" aria-expanded="false" >
                             Dropdown link
                         </a>
                         <div class="dropdown-menu" aria-labelledby="name_user">
